@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS for layout (optional) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- External CSS for custom styling -->
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+    <div class="p-2">
+        <h1 class="text-center chatbot-heading">Meet our Chatbot</h1>
+        
+        <!-- Chatbot Image -->
+        <img class="image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/chatbot-bot-img.png" />
+
+        <!-- Chat Container -->
+        <div id="chatContainer" class="chat-container"></div>
+
+        <!-- User Image -->
+        <div class="d-flex flex-row justify-content-end">
+            <img class="image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/chatbot-boy-img.png" />
+        </div>
+
+        <!-- Chat Input and Send Button -->
+        <div class="d-flex flex-row justify-content-center fixed-bottom">
+            <input class="user-input" id="userInput" placeholder="Type a message..." />
+            <button class="send-msg-btn" id="sendMsgBtn" onclick="sendMsgToChatbot()">
+                <span class="arrow-icon">&#10148</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+
+</html>
